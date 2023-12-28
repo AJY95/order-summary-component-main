@@ -1,0 +1,134 @@
+/* ==================
+    General
+=====================*/
+html, body{
+    height: 100%;
+}
+
+body{
+    font-size: 16px;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+    color: hsl(224, 23%, 55%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-image: url('images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+
+}
+
+
+/* ==================
+    Typographt
+=====================*/
+a{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+
+.card__title{
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.card__body{
+    font-size: 1.02rem;
+}
+
+.card__body, .card__title{
+    text-align: center;
+}
+
+.card__title, .card__plan-title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.card__plan-title{
+    font-size: 1rem;
+    margin: 0 0 .4rem 0;
+}
+.card__plan-price{
+    margin: 0;
+}
+
+
+
+/* ==================
+    Layout
+=====================*/
+
+.card-container{
+    max-width: 375px;
+    border-radius: 2rem;
+    background-color: white;
+    overflow: hidden;
+}
+
+.hero-img{
+    width: 100%;
+}
+.card-discription{
+    padding: 1rem 2rem;
+}
+
+.card-discription div:first-child {
+    padding-inline: 1rem;
+}
+
+.card__plan{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    line-height: 1.2;
+}
+
+
+.card__plan div{
+    margin-right: auto;
+}
+
+.btn{
+  text-align: center;
+  padding: .7rem 0;
+  border-radius: .7rem;
+  font-weight: 700;
+  
+}
+
+.btn-bg{
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    margin-bottom: 1rem;
+}
+
+
+.btn-bg:hover{
+    background-color: hsl(223, 47%, 23%);
+}
+.btn-cancel:hover,
+.btn-change-plan:hover{
+    color:  hsl(223, 47%, 23%);
+}
+
+
+
+@media only screen and (min-width:400px){
+    body{
+        background-image: url('images/pattern-background-desktop.svg');
+        
+    }
+    
+}
